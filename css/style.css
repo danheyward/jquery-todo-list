@@ -1,27 +1,23 @@
 body {
   width: 100%;
   margin: auto;
-  padding: 0px;
+  padding: 30px 0px 0px 300px;
+  background-image: url('../img/blackboard.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Rock Salt', cursive;
+  color: #FFF
 }
 
 div {
 
 }
 
-.wrapper {
-  width: 100%;
-  text-align: center;
+.sideBar {
+
 }
 
 h1 {
-  
-}
-
-input {
-
-}
-
-.input {
 
 }
 
@@ -29,23 +25,56 @@ input {
 
 }
 
+input[type='text'] {
+  background: #555;
+  color: #FFF;
+  border-color: #555;
+  font-family: 'Rock Salt', cursive;
+  font-size: 12px;
+}
+
+input[type='button'] {
+  cursor: pointer;
+  background: #555;
+  color: #FFF;
+  border-color: #555;
+  font-family: 'Rock Salt', cursive;
+  font-size: 10px;
+}
+
+input[type='button']:focus {
+  border-color: #FFF;
+}
+
 #submitTask {
 
 }
 
 .list {
-  width: 35%;
-  margin: 0 auto;
+  width: 40%;
+  text-align: left;
+  list-style-type: none;
+  padding-left: 0px;
+  text-indent: -30px;
 }
 
 li {
-  font-family: sans-serif;
-  font-size: 20px;
-  color: blue;
-  text-decoration: underline;
+  font-size: 15px;
+  color: #FFF;
+  text-align: left;
+  width: 350px;
+}
 
+button {
+  background: none;
+  color: #FFF;
+  border: none;
+  font-family: 'Rock Salt', cursive;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 #toDoList {
   list-style: none;
+  width: 200px;
 }

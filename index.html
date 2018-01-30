@@ -3,31 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>To-Do List</title>
 </head>
 <body>
-  <div class="wrapper">
+
+  <div class='sideBar'>
 
     <h1>To-Do List</h1>
 
-    <div class='list'>
-      <ul id='toDoList'>
-        <li>Test one</li>
-        <li>Test two</li>
-        <li>Test three</li>
-      </ul>
-    </div>
-
     <div class='input'>
       <form>
-        <input id='task' type='text' placeholder='Input to-do here'></input>
-        <input id='submitTask' type='button' value='Add Next Item'></input>
+        <input id='task' type='text' maxlength=30></input>
+        <input id='submitTask' type='button' value='Add To-Do'></input>
       </form>
     </div>
 
   </div>
+
+    <div class='list'>
+      <ul id='toDoList'>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
 
   <script type="text/javascript" src="js/app.js"></script>
 </body>

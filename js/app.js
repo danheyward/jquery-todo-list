@@ -1,4 +1,3 @@
-// Link input text + submit to field + button
 
 var form = $('form');
 var inputBar = $('#task');
@@ -7,20 +6,16 @@ var toDoList = $('#toDoList');
 var newListText = null;
 var newBullet = null;
 
-
 var addToDo = function() {
-  newListText = inputBar.val();
-  newBullet = $('<li>');
-  newBullet.text(newListText);
-  toDoList.append(newBullet);
-  inputBar.val('');
-  inputBar.focus();
+  if (inputBar.val() !== '') {
+    newListText = inputBar.val();
+    newBullet = $('<li>');
+    newBullet.html('<button>x</button>&nbsp;' + newListText);
+    toDoList.append(newBullet);
+    inputBar.val('');
+    inputBar.focus();
+  }
 };
-
-
-
-
-
 
 
 $(document).ready(function() {
@@ -28,6 +23,10 @@ $(document).ready(function() {
     addToDo();
     event.preventDefault();
   });
+
   $('#submitTask').on('click', addToDo);
 
+  toDoList.on('click', function(event) {
+    $(event.target).closest('li').remove();
+  });
 });
