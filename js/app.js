@@ -2,7 +2,7 @@
 var form = $('form');
 var inputBar = $('#task');
 var inputButton = $('#submitTask');
-var toDoList = $('#toDoList');
+var toDoList = $('ul');
 var newListText = null;
 var newBullet = null;
 
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   $('#submitTask').on('click', addToDo);
 
-  toDoList.on('click', function(event) {
-    $(event.target).closest('li').remove();
+  toDoList.on('click', 'button', function() {
+    $(this).parent().remove();
   });
 });
