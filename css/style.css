@@ -26,16 +26,17 @@ h1 {
 }
 
 input[type='text'] {
-  background: #555;
+  background: none;
   color: #FFF;
   border-color: #555;
   font-family: 'Rock Salt', cursive;
   font-size: 12px;
+  border-style: solid;
 }
 
 input[type='button'] {
   cursor: pointer;
-  background: #555;
+  background: none;
   color: #FFF;
   border-color: #555;
   font-family: 'Rock Salt', cursive;
